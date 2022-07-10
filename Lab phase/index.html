@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOST&FOUND</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div class="design">
+            <nav>
+                <img src="./images/logo.png" class="menu-img">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Search Me</a></li>
+                <li><a href="">FindMe</a></li>
+            </ul> 
+            <div class="search">
+                <div class="icon "></div>
+                 <div class="input"></div>
+                 <input type="text" placeholder="Search here" id="mysearch">
+            </div>
+            <span class="clear" onclick="document.getElementById('mysearch').value = ' ' "></span>
+        </div>
+       <script>
+          const icon = document.querySelector('.icon');
+          const search = document.querySelector('.search');
+          icon.onclick = function(){
+            search.classList.toggle('active')
+          } 
+       </script>
+        
+    </body>
+ </html>
